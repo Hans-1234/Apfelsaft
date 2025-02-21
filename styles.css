@@ -1,123 +1,67 @@
-/* Allgemeine Stile */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    text-align: center;
 }
 
-/* Navigation */
 header {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
-    padding: 15px;
-    text-align: center;
+    padding: 15px 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Hero-Bereich */
-.hero {
-    text-align: center;
-    padding: 50px;
-    background: url('apfelgarten.jpg') no-repeat center center/cover;
-    color: white;
-}
-
-.hero .btn {
-    background-color: white;
-    color: #4CAF50;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-/* Produkte */
-.products {
-    text-align: center;
-    padding: 40px;
-}
-
-.product-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.product {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    text-align: center;
+main {
+    padding: 20px;
 }
 
 .product img {
-    width: 100%;
-    border-radius: 5px;
+    max-width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
 }
 
-.product .price {
-    font-weight: bold;
-    color: #4CAF50;
-}
-
-.btn {
-    background-color: #4CAF50;
+button {
+    background-color: #e60000;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 15px 30px;
+    font-size: 18px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-.btn:hover {
-    background-color: #357a38;
+button:hover {
+    background-color: #b30000;
 }
 
-/* Kontaktformular */
-.contact {
-    text-align: center;
-    padding: 40px;
-    background-color: #eee;
-}
-
-.contact form {
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact input, .contact textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-/* Footer */
 footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
-    margin-top: 20px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #555;
+    color: white;
 }
